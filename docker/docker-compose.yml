@@ -16,3 +16,6 @@ services:
      build: ./todo-app/tests/
      environment:
       - FRONT_HOST=todofrontend
+    depends_on:
+      - todofront
+      - todoback
